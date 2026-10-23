@@ -1,0 +1,86 @@
+:root {
+  /* ==============================================================================
+     DIGITAL DOCTOR DESIGN TOKENS
+     Restrained Clinical Medical Palette
+     ============================================================================== */
+
+  /* Primary Brand & Medical Accents */
+  --color-primary: #0284c7;        /* Medical Sky Blue */
+  --color-primary-hover: #0369a1;
+  --color-primary-subtle: #e0f2fe;
+  --color-primary-border: #bae6fd;
+
+  /* Secondary Neutral Slates */
+  --color-bg-base: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-elevated: #ffffff;
+  --color-bg-muted: #f1f5f9;
+  --color-bg-subtle: #e2e8f0;
+
+  /* Text & Typography Colors */
+  --color-text-main: #0f172a;       /* Deep slate */
+  --color-text-secondary: #475569;  /* Balanced body contrast */
+  --color-text-muted: #64748b;      /* Helper & labels */
+  --color-text-inverse: #ffffff;
+
+  /* Clinical Status Tokens */
+  --color-success: #15803d;        /* Approved / Normal */
+  --color-success-bg: #f0fdf4;
+  --color-success-border: #bbf7d0;
+
+  --color-warning: #b45309;        /* Awaiting Clinician Review */
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fde68a;
+
+  --color-danger: #b91c1c;         /* Emergency Red-Flag / Rejection */
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fecaca;
+
+  --color-info: #0369a1;           /* Informational / Notes */
+  --color-info-bg: #f0f9ff;
+  --color-info-border: #bae6fd;
+
+  /* Touch & Border Dimensions */
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-kiosk: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+
+  /* Typography Scale */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-kiosk: 2.25rem; /* 36px */
+
+  /* Touch Target Spacing for Hospital Kiosks */
+  --touch-target-min: 48px;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-dropdown: 50;
+  --z-sticky: 100;
+  --z-modal-backdrop: 500;
+  --z-modal: 600;
+  --z-toast: 1000;
+}

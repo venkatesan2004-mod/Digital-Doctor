@@ -1,0 +1,197 @@
+/* ==============================================================================
+   DIGITAL DOCTOR LAYOUT STYLES
+   ============================================================================== */
+
+/* KIOSK TOUCHSCREEN LAYOUT */
+.kiosk-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top right, #f0f9ff, #f8fafc);
+  overflow-x: hidden;
+}
+
+.kiosk-header {
+  height: 80px;
+  background-color: var(--color-bg-surface);
+  border-bottom: 2px solid var(--color-primary-border);
+  padding: 0 var(--spacing-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+}
+
+.kiosk-branding {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.kiosk-logo-badge {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+}
+
+.kiosk-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.kiosk-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kiosk-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.kiosk-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-6);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.kiosk-footer {
+  padding: var(--spacing-4) var(--spacing-6);
+  background-color: var(--color-bg-surface);
+  border-top: 1px solid var(--color-bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* STAFF DASHBOARD LAYOUT */
+.staff-shell {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--color-bg-base);
+}
+
+.staff-sidebar {
+  width: 260px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #1e293b;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  height: 70px;
+  padding: 0 var(--spacing-5);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  border-bottom: 1px solid #1e293b;
+}
+
+.sidebar-header h2 {
+  font-size: var(--font-size-lg);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: var(--spacing-4) var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-4);
+  color: #94a3b8;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #1e293b;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
+
+.sidebar-footer {
+  padding: var(--spacing-4);
+  border-top: 1px solid #1e293b;
+  font-size: var(--font-size-xs);
+  color: #64748b;
+}
+
+.staff-content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.staff-topbar {
+  height: 70px;
+  background-color: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-bg-subtle);
+  padding: 0 var(--spacing-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.staff-user-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.staff-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.staff-page-body {
+  flex: 1;
+  padding: var(--spacing-6);
+  overflow-y: auto;
+}

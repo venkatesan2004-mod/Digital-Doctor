@@ -1,0 +1,255 @@
+/* ==============================================================================
+   DIGITAL DOCTOR PAGES STYLES
+   ============================================================================== */
+
+/* KIOSK WELCOME VIEW */
+.kiosk-welcome-card {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-10);
+  box-shadow: var(--shadow-kiosk);
+  border: 1px solid var(--color-primary-border);
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+.kiosk-welcome-hero {
+  margin-bottom: var(--spacing-8);
+}
+
+.kiosk-welcome-title {
+  font-size: var(--font-size-kiosk);
+  color: var(--color-text-main);
+  font-weight: 700;
+  margin-bottom: var(--spacing-2);
+}
+
+.kiosk-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+
+.kiosk-big-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-8) var(--spacing-6);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-surface);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  min-height: 160px;
+  cursor: pointer;
+}
+
+.kiosk-big-btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.kiosk-big-btn svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--spacing-3);
+}
+
+.kiosk-big-btn span.btn-label {
+  font-size: var(--font-size-xl);
+}
+
+.kiosk-big-btn span.btn-sub {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+  margin-top: var(--spacing-1);
+}
+
+/* EMERGENCY WARNING BANNER */
+.emergency-banner {
+  background-color: var(--color-danger-bg);
+  border: 2px solid var(--color-danger);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-4) var(--spacing-6);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  color: var(--color-danger);
+  margin-bottom: var(--spacing-6);
+}
+
+.emergency-banner h4 {
+  color: var(--color-danger);
+  margin-bottom: var(--spacing-1);
+}
+
+/* CHAT CONSULTATION WORKSPACE */
+.consultation-workspace {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--spacing-6);
+  flex: 1;
+  min-height: 0;
+}
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-bg-subtle);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  height: calc(100vh - 160px);
+}
+
+.chat-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  background-color: #fafbfc;
+}
+
+.message-bubble {
+  max-width: 85%;
+  padding: var(--spacing-4) var(--spacing-5);
+  border-radius: var(--border-radius-md);
+  line-height: 1.6;
+}
+
+.message-patient {
+  align-self: flex-end;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-bottom-right-radius: 2px;
+}
+
+.message-patient p {
+  color: #ffffff;
+}
+
+.message-ai {
+  align-self: flex-start;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-bg-subtle);
+  box-shadow: var(--shadow-sm);
+  border-bottom-left-radius: 2px;
+  width: 100%;
+  max-width: 90%;
+}
+
+.ai-header-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-3);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 1px solid var(--color-bg-subtle);
+}
+
+.chat-input-area {
+  padding: var(--spacing-4);
+  border-top: 1px solid var(--color-bg-subtle);
+  background-color: var(--color-bg-surface);
+}
+
+.suggestion-pills-row {
+  display: flex;
+  gap: var(--spacing-2);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+}
+
+.chat-form {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+/* CLINICAL SIDEBAR DRAWER */
+.clinical-drawer {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-bg-subtle);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: calc(100vh - 160px);
+}
+
+.drawer-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-bg-subtle);
+  background-color: var(--color-bg-muted);
+}
+
+.drawer-tab {
+  flex: 1;
+  padding: var(--spacing-3);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.drawer-tab.active {
+  color: var(--color-primary);
+  background-color: var(--color-bg-surface);
+  border-bottom-color: var(--color-primary);
+}
+
+.drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-4);
+}
+
+/* STATS CARDS FOR DASHBOARD */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+}
+
+.stat-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-bg-subtle);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-value {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--spacing-2);
+}
+
+/* CLINICIAN APPROVAL CARD */
+.approval-card {
+  border: 1px solid var(--color-warning-border);
+  background-color: #fffdf5;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-5);
+  margin-bottom: var(--spacing-4);
+}
+
+.approval-card-actions {
+  display: flex;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-4);
+  justify-content: flex-end;
+}
